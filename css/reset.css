@@ -86,7 +86,7 @@
 
     /* change border colour to suit your needs */
     hr {
-        height: 1px;
+        height: 0.5px;
         margin: auto;
         width:50%;   
         color: transparent;
