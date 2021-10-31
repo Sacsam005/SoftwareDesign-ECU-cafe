@@ -63,10 +63,13 @@
 
 /*  General CSS*/
 body{
-    background: #fff;
+   background: url(https://visitnepal2020.com/wp-content/themes/visitnepaltwenty/assets/images/bg-3-food.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
-.wrapper{
+.wrapper {
     width: 1100px;
     margin: 0 auto;
 }
@@ -261,10 +264,11 @@ header.dark nav ul li a:hover{
     color: #919191;
 }
 
-
-
-
-
+.wrapper ul li a {
+    font-size:13px;
+    font-weight: 800;
+    color: black;
+}
 
 
 /*    Services    */
@@ -302,9 +306,10 @@ header.dark nav ul li a:hover{
 }
 
 .services ul li p{
-   color: #838181;
+   color: black;
     font-family: "raleway-regular";
     font-size: 14px;
+    font-weight: 800;
     line-height: 28px; 
     margin-top: 40px;
     letter-spacing: .5px;
@@ -359,7 +364,8 @@ header.dark nav ul li a:hover{
 }
 
 .title h2{
-    color: #616161;
+    color: black;
+    font-weight: 800;
     font-family: "raleway-bold";
     font-size: 30px;
     font-weight: bold;
@@ -368,11 +374,11 @@ header.dark nav ul li a:hover{
 }
 
 .title h3{
-    color: #9b9b9b;
+    color: black;
     font-family: "raleway-regular";
     font-size: 14px;
     margin: 0 0 20px 0;
-    font-weight: normal!important;
+    font-weight: 800;
 }
 
 .title hr.separator{
@@ -561,7 +567,8 @@ footer .footer_logo{
 
 footer .rights p{
     float: left;
-    color: #838181;
+    color: black;
+    font-weight: 800;
     font-family: "raleway-regular";
     font-size: 13px;
     margin: 5px 0 0 40px; 
@@ -601,4 +608,10 @@ footer nav ul li a{
 
 footer nav ul li a:hover{
     color: #616161;
+}
+
+.testimonials {
+    font-weight: 800;
+    color: black;
+    font: bold;
 }
