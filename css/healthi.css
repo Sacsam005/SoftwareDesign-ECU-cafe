@@ -1,47 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-/*  Fonts  */
-@font-face {
-    font-family: 'raleway-regular';
-    src: url('../fonts/raleway-regular.eot');
-    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-regular.woff') format('woff'),
-         url('../fonts/raleway-regular.ttf') format('truetype'),
-         url('../fonts/raleway-regular.svg#raleway-regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'raleway-semibold';
-    src: url('../fonts/raleway-semibold.eot');
-    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-semibold.woff') format('woff'),
-         url('../fonts/raleway-semibold.ttf') format('truetype'),
-         url('../fonts/raleway-semibold.svg#raleway-semibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'raleway-bold';
-    src: url('../fonts/raleway-bold.eot');
-    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-bold.woff') format('woff'),
-         url('../fonts/raleway-bold.ttf') format('truetype'),
-         url('../fonts/raleway-bold.svg#raleway-bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+html {
+    font-family: Georgia, sans-serif, "Times New Roman";
 
 }
 
 
 
 /*  General CSS*/
-body{
-    background: #fff;
+body {
+    background: url(https://visitnepal2020.com/wp-content/themes/visitnepaltwenty/assets/images/bg-3-food.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .wrapper{
@@ -50,7 +19,7 @@ body{
 }
 
 h1, h2, h3, h4, h5 ,h6{
-    color: #626262;
+    color: black;
     font-family: "raleway-regular", arial;
     letter-spacing: 1px;
 }
@@ -88,8 +57,9 @@ h5, h6          { font-weight: bolder }
 
 /*    Billboard    */
 .billboard{
-    width: 99%;
-    height: 1800px;
+    width: 1100px;
+    min-width: 100%;
+    height: 100%;
     position: relative;
 }
 
@@ -215,6 +185,8 @@ header nav ul li a{
     text-decoration: none;  
     font-family: "raleway-regular";
     font-size: 14px;
+    margin-right: 20px;
+    font-weight: 800;
 
     transition:all .2s linear;
     -webkit-transition:all .2s linear;
@@ -227,20 +199,24 @@ header.light nav ul li a{
 }
 
 header.light nav ul li a:hover{
-    color: #B9B9B9;
+    color: lightcoral;
 }
 
 header.dark nav ul li a{  
-    color: #5d5d5d;
+    color: black;
 }
 
 header.dark nav ul li a:hover{
-    color: #919191;
+    color: lightcoral;
 }
 
 
-
-
+hr {
+    height: 0.5px;
+    margin: auto;
+    width:50%;   
+    color: black;
+}
 
 
 
@@ -367,7 +343,13 @@ header.dark nav ul li a:hover{
 /*    footer    */
 footer{
     padding: 35px 0;
-    overflow: hidden;
+    overflow: visible;
+}
+
+.footer.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 footer .footer_logo{
@@ -376,16 +358,17 @@ footer .footer_logo{
 
 footer .rights p{
     float: left;
-    color: #838181;
+    font-weight: 800;
+    color: black;
     font-family: "raleway-regular";
-    font-size: 13px;
+    font-size: 14px;
     margin: 5px 0 0 40px; 
 }
 
 footer .rights p a{
-    color: #777;
+    color: black;
     font-family: "raleway-semibold";
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -403,9 +386,11 @@ footer nav ul li{
 }
 
 footer nav ul li a{
-    color: #838181;
+    color: black;
     font-family: "raleway-regular";
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 800;
+    margin-right: 20px;
     text-decoration: none;
 
     transition:all .2s linear;
@@ -415,7 +400,7 @@ footer nav ul li a{
 }
 
 footer nav ul li a:hover{
-    color: #616161;
+    color: lightcoral;
 }
 
 #feedback-page {
@@ -572,4 +557,19 @@ textarea:focus {
 .submit:hover .ease {
   width: 100%;
   background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+body {
+    width: 100%;
+    height: auto;
+}
+
+header nav ul li a, footer nav ul li a, {
+    margin-right: 20px;
+}
+
+img.logo {
+    margin-left: 20px;
+}
 }
