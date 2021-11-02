@@ -262,11 +262,6 @@ hr {
 }
 
 
-
-
-
-
-
 /*    Video    */
 .video{
     display: block;
@@ -335,9 +330,6 @@ hr {
     padding: 0;
     border: 0!important;
 }
-
-
-
 
 
 /*    footer    */
@@ -560,9 +552,14 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 580px) {
-body {
+body  {
     width: 100%;
     height: auto;
+    min-width: 75%;
+}
+div center img {
+  width: 100%;  
+  min-width: 75%;
 }
 
 header nav ul li a, footer nav ul li a, {
