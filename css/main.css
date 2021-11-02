@@ -23,42 +23,12 @@
 
 
 /*  Fonts  */
-@font-face {
-    font-family: 'raleway-regular';
-    src: url('../fonts/raleway-regular.eot');
-    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-regular.woff') format('woff'),
-         url('../fonts/raleway-regular.ttf') format('truetype'),
-         url('../fonts/raleway-regular.svg#raleway-regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+
+
+html {
+    font-family: Georgia, sans-serif, "Times New Roman";
 
 }
-
-@font-face {
-    font-family: 'raleway-semibold';
-    src: url('../fonts/raleway-semibold.eot');
-    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-semibold.woff') format('woff'),
-         url('../fonts/raleway-semibold.ttf') format('truetype'),
-         url('../fonts/raleway-semibold.svg#raleway-semibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'raleway-bold';
-    src: url('../fonts/raleway-bold.eot');
-    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-bold.woff') format('woff'),
-         url('../fonts/raleway-bold.ttf') format('truetype'),
-         url('../fonts/raleway-bold.svg#raleway-bold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 
 
 /*  General CSS*/
@@ -78,6 +48,8 @@ h1, h2, h3, h4, h5 ,h6{
     color: #626262;
     font-family: "raleway-regular", arial;
     letter-spacing: 1px;
+    font-size: 30px;
+    text-shadow: 5px black;
 }
 
 h1              { font-size: 2em; margin: .67em 0 }
@@ -113,14 +85,14 @@ h5, h6          { font-weight: bolder }
 
 /*    Billboard    */
 .billboard{
-    width: 100%;
+    width: 1100px;
+    min-width: 100%;
     height: 690px;
     position: relative;
 }
 
 .billboard.light{
-    background: url('../img/cafe.jpg') no-repeat;   
-     
+    background: url('https://github.com/Sacsam005/SoftwareDesign-ECU-cafe/blob/main/img/cafe.jpg?raw=true') no-repeat;   
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -129,7 +101,6 @@ h5, h6          { font-weight: bolder }
 
 .billboard.dark{
     background: url('../img/billboard2.jpg') no-repeat;
-    
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -208,9 +179,6 @@ h5, h6          { font-weight: bolder }
 
 
 
-
-
-
 /*    header    */
 header{
     width: 100%;
@@ -220,7 +188,7 @@ header{
 header .logo{
     float: left;
     margin-top: 50px;
-    width:13%;
+    width:10%;
 	
 }
 
@@ -241,6 +209,8 @@ header nav ul li a{
     text-decoration: none;  
     font-family: "raleway-regular";
     font-size: 14px;
+    margin-right: 20px;
+
 
     transition:all .2s linear;
     -webkit-transition:all .2s linear;
@@ -253,7 +223,7 @@ header.light nav ul li a{
 }
 
 header.light nav ul li a:hover{
-    color: #B9B9B9;
+    color: lightcoral;
 }
 
 header.dark nav ul li a{  
@@ -261,12 +231,12 @@ header.dark nav ul li a{
 }
 
 header.dark nav ul li a:hover{
-    color: #919191;
+    color: lightcoral;
 }
 
 .wrapper ul li a {
-    font-size:13px;
-    font-weight: 800;
+    font-size:14px;
+    
     color: black;
 }
 
@@ -392,11 +362,6 @@ header.dark nav ul li a:hover{
 }
 
 
-
-
-
-
-
 /*    testimonials    */
 .testimonials{
     margin-top: 100px;
@@ -478,11 +443,6 @@ header.dark nav ul li a:hover{
 }
 
 
-
-
-
-
-
 /*    blog posts    */
 .blog_posts{
     margin-top: 100px;
@@ -550,15 +510,16 @@ header.dark nav ul li a:hover{
 }
 
 
-
-
-
-
-
 /*    footer    */
 footer{
     padding: 35px 0;
-    overflow: hidden;
+    overflow: visible;
+}
+
+.footer.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 footer .footer_logo{
@@ -568,23 +529,22 @@ footer .footer_logo{
 footer .rights p{
     float: left;
     color: black;
-    font-weight: 800;
     font-family: "raleway-regular";
-    font-size: 13px;
+    font-size: 14px;
     margin: 5px 0 0 40px; 
 }
 
 footer .rights p a{
-    color: #777;
+    color: black;
     font-family: "raleway-semibold";
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     text-decoration: none;
 }
 
 footer nav ul{
     float: right;
-    overflow: hidden;
+    overflow: visible;
     list-style: none;
     margin-top: 5px; 
 }
@@ -595,10 +555,12 @@ footer nav ul li{
 }
 
 footer nav ul li a{
-    color: #838181;
+    color: black;
     font-family: "raleway-regular";
-    font-size: 13px;
+    font-size: 14px;
+    margin-right: 20px;
     text-decoration: none;
+
 
     transition:all .2s linear;
     -webkit-transition:all .2s linear;
@@ -607,11 +569,30 @@ footer nav ul li a{
 }
 
 footer nav ul li a:hover{
-    color: #616161;
+    color: lightcoral;
 }
 
 .testimonials {
     font-weight: 800;
     color: black;
     font: bold;
+}
+
+@media only screen and (max-width: 580px) {
+body {
+    width: 100%;
+    height: auto;
+}
+
+header nav ul li a, footer nav ul li a, {
+    margin-right: 20px;
+}
+
+img.logo {
+    margin-left: 20px;
+}
+div#form-div {
+    align-items: center;
+
+}
 }
