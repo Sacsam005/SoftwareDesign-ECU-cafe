@@ -8,15 +8,6 @@ About this Project
 
 <p align="center">
   <img src="https://img.shields.io/npm/v/readme-md-generator.svg?orange=blue" />
-  <a href="https://www.npmjs.com/package/readme-md-generator">
-    <img alt="downloads" src="https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue" target="_blank" />
-  </a>
-  <a href="https://codecov.io/gh/kefranabg/readme-md-generator">
-    <img src="https://codecov.io/gh/kefranabg/readme-md-generator/branch/master/graph/badge.svg" />
-  </a>
-  <a href="https://github.com/frinyvonnick/gitmoji-changelog">
-    <img src="https://img.shields.io/badge/changelog-gitmoji-brightgreen.svg" alt="gitmoji-changelog">
-  </a> 
 </p>
 
 This project was bootstrapped with [Apache Netbeans app](https://netbeans.apache.org/download/index.html):
