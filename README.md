@@ -47,13 +47,12 @@ For more details, Watch !!! [JavaScript Web Developer Bootcamp - Complete Guide 
 <img src="https://media4.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif">
 
 ## Authors
-
-👩 **Kim Min SUn**
+<br>👤 **Sachin Samal**
+<br>👤 **Kim Min SUn**
 <br>👤 **Riwaz Gyawali**
 <br>👤 **Rujan Bhuju**
 <br>👤 **Obu Stanford**
 <br>👤 **Prakash Silwal**
-<br>👤 **Sachin Samal**
 
  Github: [Sacsam005](https://github.com/Sacsam005)
 
